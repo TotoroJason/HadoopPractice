@@ -51,6 +51,8 @@ public class WordCount {
   }
 
   public static void main(String[] args) throws Exception {
+	  for(int i=0; i<args.length; i++)
+		  System.err.println("args: " + args[i] + "\n");
     Configuration conf = new Configuration();
     String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
     if (otherArgs.length != 2) {
